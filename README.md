@@ -9,36 +9,40 @@ This repo contains a simple static website (`index.html`, `error.html`, and `sty
 ## 📁 Files
 
 ec2statichosting/
+
 ├── index.html      # Homepage  
 ├── error.html      # Error page  
 └── style.css       # CSS Styling
 
 ## 🚀 Deployment on EC2
 
-### ✅ Prerequisites
+### ✅ Prerequisites : 
 - EC2 instance (Ubuntu)
 - Apache2 & Git installed
 - `.pem` SSH key
 
 ### 🔧 Steps
 
-1. SSH into EC2
+1. SSH into EC2 :
+   
 ssh -i "your-key.pem" ubuntu@your-ec2-public-ip
 
-2. Install Apache & Git
+3. Install Apache & Git :
+   
 sudo apt update  
 sudo apt install apache2 git -y
 
-3. Go to Apache root
+5. Go to Apache root :
+   
 cd /var/www/html
 
-4. Remove default files
+7. Remove default files
 sudo rm -rf *
 
-5. Clone this repo
+8. Clone this repo
 sudo git clone https://github.com/HackRore/ec2statichosting.git .
 
-6. Restart Apache
+9. Restart Apache
 sudo systemctl restart apache2
 
 ## 🌍 Access Website
