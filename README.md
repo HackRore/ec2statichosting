@@ -36,18 +36,22 @@ sudo apt install apache2 git -y
    
 cd /var/www/html
 
-7. Remove default files
+7. Remove default files:
+   
 sudo rm -rf *
 
-8. Clone this repo
+9. Clone this repo :
+    
 sudo git clone https://github.com/HackRore/ec2statichosting.git .
 
-9. Restart Apache
+11. Restart Apache :
+    
 sudo systemctl restart apache2
 
 ## 🌍 Access Website
 
 Visit:  
+
 http://your-ec2-public-ip
 
 ✅ index.html loads homepage  
